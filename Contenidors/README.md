@@ -5,3 +5,7 @@ Pràctica en què es treballen els conceptes:
 * Herència
 * Polimorfisme
 * Sobreescriptura
+
+Esquema de classes
+--------------------
+![Alt text](doc/ClassDiagram.png)
