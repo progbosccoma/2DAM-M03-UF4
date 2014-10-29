@@ -77,7 +77,12 @@ public class Vaixell {
 	public boolean add(Contenidor c) {
 		if (!isFull()) {
 			containers[quantity++] = c;
-			currentVolume += c.getVolume();
+			// si és Cisterna, s'ha de sumar en m3
+			if(c instanceof Cisterna) {
+				currentVolume += c.getVolume() / 1000;  
+			} else {
+				currentVolume += c.getVolume();
+			}
 			return true;
 		} else {
 			return false;
